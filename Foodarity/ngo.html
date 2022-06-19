@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Deliver Food</title>
+</head>
+<body>
+  <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="https://image.shutterstock.com/image-vector/donate-food-cartoon-silhouette-hand-260nw-1606942012.jpg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">Foodarity</span>
+      </a>
+      <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+        <a href="index.html" class="mr-5 hover:text-gray-900" id="home">Home</a>
+        <a href="aboutwebsite.html" class="mr-5 hover:text-gray-900" id="aboutweb">About website</a>
+        <a href="services.html" class="mr-5 hover:text-gray-900" id="services">Services</a>
+        <a href="contactus.html" class="mr-5 hover:text-gray-900" id="contacts">Contacts</a>
+      </nav>
+    </div>
+
+  </header>
+  <section class="text-gray-600 body-font">
+    <form action="" id="ngo">
+      <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
+        <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
+          <h1 class="title-font font-medium text-3xl text-gray-900">Kindly fill your NGO and food details :)</h1>
+          <p class="leading-relaxed mt-4">"Whatever you are donating, may god bless you and your family!"</p>
+        </div>
+        <div class="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+          <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Enter NGO Details:</h2>
+          <div class="relative mb-4">
+            <label for="full-name" class="leading-7 text-sm text-gray-600">Name</label>
+            <input type="text" id="fullname1" name="full-name1" class="w-full bg-white rounded border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+          <div class="relative mb-4">
+            <label for="email" class="leading-7 text-sm text-gray-600">Email-ID</label>
+            <input type="email" id="email1" name="email1" class="w-full bg-white rounded border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+          <div class="relative mb-4">
+            <label for="mycontact" class="leading-7 text-sm text-gray-600">Contact number</label>
+            <input type="number" id="mycontact1" name="mycontact1" class="w-full bg-white rounded border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+
+          </div>
+          <div class="relative mb-4">
+            <label for="myaddress" class="leading-7 text-sm text-gray-600">Address</label>
+            <input type="text" id="myaddress1" name="myaddress1" class="w-full bg-white rounded border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+          <div>
+         <strong>Date and Time:</strong><br>
+         <label for="time" class="leading-7 text-sm text-gray-600">Enter:</label>
+         <input type="datetime-local"  id="time1" name="time1" class="w-full bg-white rounded border border-gray-300 focus:border-pink-50 focus:ring-2 focus:ring-pink-100 text-base outline-none text-gray-700 py-1 px-2 leading-8 transition-colors duration-200 ease-in-out">
+         <br><br><input type="submit"  id="submit1" value="Submit" class="text-white bg-pink-500 border-0 py-2 px-8 focus:outline-none hover:bg-pink-600 rounded text-lg">
+          </div>
+          <div class="alert">Your message sent</div>
+          </form>
+        
+          <p class="text-xs text-gray-500 mt-3">Contact-8262056085 regarding any form filling issues.</p>
+        </div>
+      </div>
+      
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <script src="./ngo.js"></script>
+
+</body>
+</html>
